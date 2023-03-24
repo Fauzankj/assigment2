@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!------------------ CSS -------------->
+    <link rel="stylesheet" href="style.css" />
+    <!--------------- Feather Icon ------------->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="product.html">Product</a>
+        <a href="galery.html">Galery</a>
+        <a href="#">Blog</a>
+        <a href="#">My Inventory</a>
+    </div>
+    </nav>
+    <!-- Akhir navbar -->
+
+    <!----------Biodata  ------->
+    <section class="biodata" id="home">
+    <div class="gambar">
+        <img src="https://i0.wp.com/dianisa.com/wp-content/uploads/2022/08/16.-Profil-WA-Kosong.jpg?w=1000&ssl=1" />
+    </div>
+
+    <main class="profile">
+        <h1 id="nama">Fauzan Kartikajati</h1>
+        <p id="role">Front End Developer</p>
+        <!-- <a href="#contact" class="kontak">Kontak</a> -->
+        <a href="Fauzan's Resume.pdf" class="resume">Resume</a>
+
+        <div class="button">
+        <button class="edit" onclick="editbiodata()" id="button-edit">Edit</button>
+        <button class="cancel" onclick="cancelbiodata()" id="button-cancel">cancel</button>
+        </div>
+    </main>
+
+    <main class="about">
+        <table>
+        <tr>
+            <td>Availability</td>
+            <td id="avibility">Fulltime</td>
+        </tr>
+        <tr>
+            <td>Usia</td>
+            <td id="age">23 Tahun</td>
+        </tr>
+        <tr>
+            <td>Lokasi</td>
+            <td id="lokasi">Purbalingga</td>
+        </tr>
+        <tr>
+            <td>Pengalaman</td>
+            <td id="experience">None</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td id="email">fauzankartikajati22@gmail.com</td>
+        </tr>
+        </table>
+    </main>
+    </section>
+    <!-- Akhir Biodata --->
+
+    <!-- Form -->
+    <section class="form" id="contact">
+    <form>
+        <div class="card1">
+        <label for="nama">Name</label><br />
+        <input type="text" name="nama" id="nama-input" autofocus required minlength="2" />
+        </div>
+        <div class="card1">
+        <label for="role">Role</label><br />
+        <input type="text" name="role" id="role-input" required />
+        </div>
+        <div class="card1">
+        <label for="avibility">Avibility</label><br />
+        <input type="text" name="avibility" id="avibility-input" />
+        </div>
+        <div class="card1">
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age-input" />
+        </div>
+        <div class="card1">
+        <label for="lokasi">Lokasi</label><br />
+        <input type="text" name="lokasi" id="lokasi-input" />
+        </div>
+        <div class="card1">
+        <input type="text" name="experience" id="experience-input" />
+        </div>
+        <div class="card1">
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email-input" />
+        </div>
+        <div>
+        <button class="button-form" type="submit">SUBMIT</button>
+        </div>
+    </form>
+    </section>
+    <!-- Akhir Form -->
+
+    <!-- Footer -->
+    <footer>
+    <div class="socials">
+        <a href="https://www.instagram.com/fauzan_zenn/"><i data-feather="instagram"></i></a>
+        <a href=""><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/faozan.ozan.7547"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="credit">
+        <p>Created by <a href="">Fauzan Kartikajati</a> | &copy;2023.</p>
+    </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!--------------- Feather Icon ------------->
+    <script>
+    feather.replace();
+    </script>
+
+    <!----------Javascript ------------>
+    <script src="script.js"></script>
+</body>
+</html>

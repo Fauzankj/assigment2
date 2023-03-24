@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: lavender;
+}
+
+/*navbar start*/
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    padding: 1.4rem;
+    box-shadow: 0 5px 7px #bdbcbc;
+}
+
+.navbar-nav a {
+    color: #1e1d1d;
+    margin: 0 0.5rem;
+    font-variant: small-caps;
+}
+
+.navbar-nav a:hover {
+    color: red ;
+    font-weight: bold;
+    transition: .10s;
+}
+  /*navbar end */
+
+/*biodata start*/
+
+.biodata {
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #bdbcbc;
+}
+
+.biodata .gambar img {
+    display: inline-block;
+    border-radius: 100%;
+    width:400px;
+    height: 300px;
+    padding-left:20px ;
+}
+
+.biodata .profile .nama {
+    font-size: 2rem;
+    color: #1e1d1d;
+    line-height: 1.2;
+}
+
+.biodata .profile p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    color: #949090;
+}
+
+.biodata .profile .kontak,
+.button .edit {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4949ef;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 3, 0.5);
+}
+
+.biodata .profile .resume,
+.button .cancel {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #63c763;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 3, 0.5);
+}
+
+.about {
+    width: 50%;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+.biodata .about table {
+    width: 100%;
+    font-weight: bold;
+    height: 200px;
+}
+
+  /*end biodata */
+
+.form {
+    background-color: #fff;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #bdbcbc;
+}
+
+form div {
+    margin-top: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 0.6rem;
+    color: #1e1d1d;
+    border: 1px solid black;
+}
+
+form button {
+    background-color: #147414;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: black;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: red;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: #6e5d5d;
+    font-weight: 700;
+}
+
+  /* Halaman Product */
+
+.product {
+    min-height: 40vh;
+    background-color: #fff;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #bdbcbc;
+}
+
+.product h2 {
+    color: #fff;
+    text-shadow: 2px 2px #F2921D;
+}
+
+span {
+    font-family: 'Poppins' sans-serif;
+}
+
+.product .list-product-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product .list-product-item .list-product {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 15px;
+    width: 50%;
+    margin: 5px;
+}
+
+.product .list-product {
+    box-shadow: 0 4px 8px 0 #F2921D;
+    transition: 0.3s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product .list-product:hover {
+    box-shadow: 0 0 5px #F2921D,
+    0 0 25px #F2921D, 0 0 100px #F2921D,
+    0 0 200px #F2921D;
+    cursor: pointer;
+}
+
+.list-product-item .button-beli {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F2921D;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 3, 0.5);
+    cursor: pointer;
+}
+
+.list-product-item .button-beli:hover {
+    transition-duration: .7s;
+    background-color: #F2921D;
+}
+
+.product .list-product-item .list-product img{
+    width: 100%;
+    display: inline;
+    height: 70%;
+    border-radius: 2rem;
+}
+
+/* akhir product */
+
+
+/* galery */
+
+.galery {
+    min-height: 40vh;
+    background-color: #fff;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #bdbcbc;
+}
+.galery h1{
+    color: black;
+    text-shadow: 2px 2px cyan;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.list-galery-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #B7CADB;
+    border-radius: 2rem;
+    width: 100%;
+    height: 90%;
+
+}
+
+.galery .list-galery-item .list-galery img {
+    width: 95%;
+    height: 95%;
+    margin-top: 5px;
+    border-radius: 2rem;
+}
+
+.list-galery-item h3{
+    background-color: #C9EEFF;
+    margin: auto;
+    width: 90%;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+
+.galery  .list-galery :hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+    cursor: pointer;
+    transition: .7s;
+}
+
+/* akhir galery */
+
+
+
+
+  /* responsive */
+@media (max-width: 790px) {
+    .biodata,
+    .list-product-item {
+    flex-wrap: wrap;
+    margin: 15px;
+    }
+
+    .biodata .about {
+    margin-top: 10px;
+    padding: 0.5rem;
+    }
+
+    .biodata .about table tr td {
+    padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .list-product-item {
+    flex-wrap: wrap;
+    }
+
+    .list-product {
+    margin: 5px;
+    }
+}
+
